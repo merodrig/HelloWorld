@@ -8,9 +8,9 @@ using std::string;
 
 int main()
 {
-  auto word = string("HELLO, WORLD\n");
+  const auto word = string("HELLO, WORLD\n");
 
-  auto print_ = [](auto &c){cout<<c;};
+  const auto print_ = [](auto &c){cout<<c;};
   for_each (word.begin(), word.end(), print_ ); 
   
   return 0;

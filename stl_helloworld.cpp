@@ -12,6 +12,8 @@ int main()
 
   const auto print_ = [](auto &c){cout<<c;};
   for_each (word.begin(), word.end(), print_ ); 
-  
+ 
+  for(auto& c:word) print_(c);
+ 
   return 0;
 }
